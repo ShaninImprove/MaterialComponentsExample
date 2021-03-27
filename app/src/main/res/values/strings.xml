@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MaterialComponentsExample</string>
+    <string name="bottom_navigation_drawer">NavigationDrawer</string>
+    <string name="bottom_recycler_view">RecyclerView</string>
+    <string name="empty_screen_placeholder">Nothing here</string>
+
+    <string name="nav_drawer_text_1">Menu Item 1</string>
+    <string name="nav_drawer_text_2">Menu Item 2</string>
+    <string name="nav_drawer_text_3">Menu Item 3</string>
+
+    <string name="placeholder_text_1">Menu item 1 chosen</string>
+    <string name="placeholder_text_2">Menu item 2 chosen</string>
+    <string name="placeholder_text_3">Menu item 3 chosen</string>
+
+    <string name="nav_drawer_screen_title">NavigationDrawer Screen</string>
+    <string name="recycler_screen_title">RecyclerView Screen</string>
+
+    <string name="menu_title_linear_layout">Linear layout</string>
+    <string name="menu_title_grid_layout">Grid layout</string>
+</resources>

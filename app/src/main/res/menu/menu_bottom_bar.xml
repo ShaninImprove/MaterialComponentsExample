@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navDrawerScreen"
+        android:enabled="true"
+        android:icon="@drawable/ic_navigation_drawer_bottom"
+        android:title="@string/bottom_navigation_drawer" />
+
+    <item android:id="@+id/recyclerViewScreen"
+        android:enabled="true"
+        android:icon="@drawable/ic_recycler_view"
+        android:title="@string/bottom_recycler_view" />
+</menu>
