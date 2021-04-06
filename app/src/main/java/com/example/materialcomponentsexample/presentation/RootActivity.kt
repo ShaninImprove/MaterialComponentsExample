@@ -30,6 +30,7 @@ class RootActivity : AppCompatActivity() {
             when (it.itemId) {
                 R.id.navDrawerScreen -> openScreen(FragmentScreenFactory.Screen.NAVIGATION_DRAWER_SCREEN)
                 R.id.recyclerViewScreen -> openScreen(FragmentScreenFactory.Screen.RECYCLER_VIEW_SCREEN)
+                R.id.viewPagerScreen -> openScreen(FragmentScreenFactory.Screen.VIEW_PAGER_SCREEN)
                 else -> return@setOnNavigationItemSelectedListener false
             }
             true

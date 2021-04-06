@@ -2,6 +2,7 @@
     <string name="app_name">MaterialComponentsExample</string>
     <string name="bottom_navigation_drawer">NavigationDrawer</string>
     <string name="bottom_recycler_view">RecyclerView</string>
+    <string name="bottom_view_pager">ViewPager</string>
     <string name="empty_screen_placeholder">Nothing here</string>
 
     <string name="nav_drawer_text_1">Menu Item 1</string>
@@ -14,7 +15,16 @@
 
     <string name="nav_drawer_screen_title">NavigationDrawer Screen</string>
     <string name="recycler_screen_title">RecyclerView Screen</string>
+    <string name="view_pager_screen_title">ViewPager Screen</string>
 
     <string name="menu_title_linear_layout">Linear layout</string>
     <string name="menu_title_grid_layout">Grid layout</string>
+
+    <string name="tab_one">Tab #1</string>
+    <string name="tab_two">Tab #2</string>
+    <string name="tab_three">Tab #3</string>
+
+    <string name="page_number_one">Page Number 1</string>
+    <string name="page_number_two">Page Number 2</string>
+    <string name="page_number_three">Page Number 3</string>
 </resources>
