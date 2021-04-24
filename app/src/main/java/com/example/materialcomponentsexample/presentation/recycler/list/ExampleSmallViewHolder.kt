@@ -7,7 +7,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.materialcomponentsexample.R
 import com.example.materialcomponentsexample.data.ExampleSmallItem
 
-class ExampleSmallViewHolder(private val itemView: View) : RecyclerView.ViewHolder(itemView) {
+class ExampleSmallViewHolder(
+    itemView: View,
+    private val onClick:(title: String) -> Unit
+) : RecyclerView.ViewHolder(itemView) {
 
     private lateinit var textTitle: TextView
 
@@ -19,5 +22,9 @@ class ExampleSmallViewHolder(private val itemView: View) : RecyclerView.ViewHold
             null,
             null,
             null)
+
+        itemView.setOnClickListener {
+            onClick(item.title)
+        }
     }
 }

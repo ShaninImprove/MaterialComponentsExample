@@ -5,6 +5,7 @@ import android.transition.TransitionInflater
 import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -94,6 +95,9 @@ class RecyclerViewExampleFragment : Fragment() {
     private fun initRecycler() {
         setLinearLayout()
         recyclerView.adapter = adapter
+        adapter.setOnclickListener {
+            Toast.makeText(requireContext(), it, Toast.LENGTH_LONG).show()
+        }
     }
 
     private fun setLinearLayout() {

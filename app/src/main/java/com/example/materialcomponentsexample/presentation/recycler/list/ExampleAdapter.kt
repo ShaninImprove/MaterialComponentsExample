@@ -11,13 +11,14 @@ import com.example.materialcomponentsexample.data.ExampleSmallItem
 class ExampleAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val itemList = ArrayList<ExampleItem>()
+    private lateinit var onClick:(title: String) -> Unit
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return when (viewType) {
             SMALL_ITEM -> {
                 val view = LayoutInflater.from(parent.context)
                     .inflate(R.layout.item_example_small, parent, false)
-                ExampleSmallViewHolder(view)
+                ExampleSmallViewHolder(view, onClick)
             }
             BIG_ITEM -> {
                 val view = LayoutInflater.from(parent.context)
@@ -47,6 +48,10 @@ class ExampleAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     fun addItemToList(item: ExampleItem) {
         itemList.add(item)
         notifyItemChanged(itemList.count() - 1)
+    }
+
+    fun setOnclickListener(onClick:(title: String) -> Unit) {
+        this.onClick = onClick
     }
 
     companion object {
